@@ -1,0 +1,17 @@
+<table border="1">
+    <tr>
+        <td>Email</td>
+        <td>Password</td>
+    </tr>
+
+    <% for(let i in allrecord) { %>
+
+    <tr>
+        <td><%= allrecord[i].email %></td>
+        <td><%= allrecord[i].password %></td>
+        <td><%= i %></td>
+    </tr>
+
+    <% } %>
+    
+</table>

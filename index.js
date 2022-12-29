@@ -11,6 +11,8 @@ app.set('views',path.join(__dirname,'views'));
 
 app.use(express.urlencoded());
 
+const db = require('./config/mongoose')
+
 app.use('/',require('./routes'));
 
 app.listen(port,(err)=>{   
@@ -20,3 +22,7 @@ app.listen(port,(err)=>{
     }
     console.log("Server is start on port :- "+port);
 })
+
+
+
+
